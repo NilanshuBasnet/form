@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+    <title>Payment Window</title>
+</head>
+<body>
+    <div class="container">
+        <form action="post" class="form">
+            <h2 class="heading">Payment Details</h2>
+            <hr><br>
+            <div class="detailBox">
+                <label for="cardName">Name on Card</label>
+                <br>
+                <input type="text" id="cardName" placeholder="Name Here">
+            </div>
+
+            <div class="detailBox">
+                <label for="cardNum">Card Number</label>
+                <br>
+                <input type="text" id="cardNum" maxlength="20" placeholder="123X-XXXX-XXXX-XXXX">
+            </div>
+
+            <div class="twoColumns">
+                <div class="detailBox" id="cvvBox">
+                    <label for="cvv">CVV</label>
+                    <br>
+                    <input type="text" id="cvv" maxlength="4" placeholder="XXX"></inputtype>
+                </div>
+
+                <div class="detailBox" id="validBox">
+                    <label for="valid">Valid Through</label>
+                    <br>
+                    <input type="date" id="valid">
+                </div>
+             </div>
+            <br>
+
+            <input type="button" id="submitButton" value="PAYMENT">
+        </form>
+    </div>
+</body>
+</html>
